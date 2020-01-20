@@ -1,0 +1,23 @@
+=====race_test.csv======
+number of data 4839
+average article_length 275.9840876214094
+average question_length 9.009299442033479
+average distractor_length 7.71189263322884
+average distractor_num 2.1095267617276297
+average ans_length 7.503203141144865
+
+=====race_dev.csv======
+number of data 4802
+average article_length 274.2359433569346
+average question_length 8.967097042898793
+average distractor_length 7.698638247483718
+average distractor_num 2.1103706788837986
+average ans_length 7.483340274885465
+
+=====race_train.csv======
+number of data 34495
+average article_length 274.3898536019713
+average question_length 8.919872445281925
+average distractor_length 7.69683028481678
+average distractor_num 2.3440788520075375
+average ans_length 7.430265255834179

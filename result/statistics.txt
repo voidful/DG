@@ -1,0 +1,30 @@
+====size====
+data_dict_recurrent 3346
+data_dict_beam 4816
+data_dict_jaccard 4816
+data_dict_ori 4816
+data_dict_random 4816
+====example====
+ori  According to the wirter , self - awareness is  ['harmful to people ', ' a weak point of shy people']  a good characteristic
+random  According to the wirter , self - awareness is  [' Teens who feel contented about themselves .', 'provide everyone in the country with basic healthcare ']  a good characteristic
+beam  According to the wirter , self - awareness is  ['a good thing', 'a good thing for everyone']  a good characteristic
+beam_jaccard  According to the wirter , self - awareness is  ['a good thing', 'as important as a person']  a good characteristic
+recurrent  According to the wirter , self - awareness is  ['a healthy quality', 'a bad quality']  a good characteristic
+====filtered====
+3335
+3335
+3335
+3335
+3335
+====similarity between gold and generated distractor====
+jaccard {'Bleu_1': 0.24169588845309153, 'Bleu_2': 0.045257046788527204, 'Bleu_3': 0.005305367528366038, 'Bleu_4': 0.0013263860914390123, 'ROUGE_L': 0.24898644706675355, 'CIDEr': 0.0}
+ori {'Bleu_1': 0.9999999997140505, 'Bleu_2': 0.9970083847284428, 'Bleu_3': 0.9769612699062163, 'Bleu_4': 0.9264823718286253, 'ROUGE_L': 1.0, 'CIDEr': 0.0}
+beam {'Bleu_1': 0.2862190033833419, 'Bleu_2': 0.09359875954646085, 'Bleu_3': 0.04324718635645183, 'Bleu_4': 0.024364603741147607, 'ROUGE_L': 0.28160067564974456, 'CIDEr': 0.0}
+recurrent {'Bleu_1': 0.1938981548205557, 'Bleu_2': 0.039589959559463726, 'Bleu_3': 0.009715828165647828, 'Bleu_4': 0.0022387969901697456, 'ROUGE_L': 0.2114005479340118, 'CIDEr': 0.0}
+random {'Bleu_1': 0.037719785773852176, 'Bleu_2': 4.7197036513460504e-05, 'Bleu_3': 4.504103977094455e-10, 'Bleu_4': 1.7640205089372435e-12, 'ROUGE_L': 0.0829974811102033, 'CIDEr': 0.0}
+====similarity between distractor====
+jaccard {'Bleu_1': 0.2646757376135681, 'Bleu_2': 0.0848391206837392, 'Bleu_3': 0.010571663643007009, 'Bleu_4': 0.002904630643514962, 'ROUGE_L': 0.3117352737774596, 'CIDEr': 0.0}
+ori {'Bleu_1': 0.23405856658120122, 'Bleu_2': 0.08333496963373807, 'Bleu_3': 0.03354016472335227, 'Bleu_4': 0.014163325830971773, 'ROUGE_L': 0.26067752812372225, 'CIDEr': 0.0}
+beam {'Bleu_1': 0.5270168665713634, 'Bleu_2': 0.40458840442929167, 'Bleu_3': 0.31604394984810985, 'Bleu_4': 0.2359917422800983, 'ROUGE_L': 0.5891934121149287, 'CIDEr': 0.0}
+recurrent {'Bleu_1': 0.31789522687935556, 'Bleu_2': 0.1604943067814602, 'Bleu_3': 0.08746368494804539, 'Bleu_4': 0.05497608718091778, 'ROUGE_L': 0.3641516618202435, 'CIDEr': 0.0}
+random {'Bleu_1': 0.030476681128101188, 'Bleu_2': 0.0009091298551524562, 'Bleu_3': 0.00011050594859275128, 'Bleu_4': 1.919148680293642e-08, 'ROUGE_L': 0.05743749724034689, 'CIDEr': 0.0}

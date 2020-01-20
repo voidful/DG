@@ -1,0 +1,29 @@
+RACE RECURRENT
+num of data 3335
+perplexity	2.452650547
+acc	0.7073463268
+entropy	0.612525
+
+RACE ORI
+num of data 3335
+perplexity	2.04571414
+acc	0.7565217391
+entropy	0.35951766
+
+RACE_BEAM
+num of data 3335
+perplexity	2.265202522
+acc	0.7442278861
+entropy	0.4434701
+
+RACE_BEAM_JACCARD
+num of data 3335
+perplexity	2.35048151
+acc	0.7313343328
+entropy	0.60314286
+
+RACE_RAND
+num of data 3335
+perplexity	2.082728148
+acc	0.7937031484
+entropy	0.29607096

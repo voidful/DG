@@ -188,10 +188,11 @@ for k, v in data_dict_jaccard.items():
         for mk, mv in metrics_dict.items():
             example_dict[mk].append(mv)
     for mk, mv in example_dict.items():
-        if not 0 in mv and not any(n < 0 for n in mv):
-            overall_dict_jaccard[mk].append(statistics.harmonic_mean(mv))
-        else:
-            overall_dict_jaccard[mk].append(np.mean(mv))
+        # if not 0 in mv and not any(n < 0 for n in mv):
+        #     overall_dict_jaccard[mk].append(statistics.harmonic_mean(mv))
+        # else:
+        #     overall_dict_jaccard[mk].append(np.mean(mv))
+        overall_dict_jaccard[mk].append(np.mean(mv))
 for mk, mv in overall_dict_jaccard.items():
     overall_result_jaccard[mk] = np.mean(mv)
 print("jaccard", overall_result_jaccard)
@@ -205,10 +206,11 @@ for k, v in data_dict_ori.items():
         for mk, mv in metrics_dict.items():
             example_dict[mk].append(mv)
     for mk, mv in example_dict.items():
-        if not 0 in mv and not any(n < 0 for n in mv):
-            overall_dict_ori[mk].append(statistics.harmonic_mean(mv))
-        else:
-            overall_dict_ori[mk].append(np.mean(mv))
+        # if not 0 in mv and not any(n < 0 for n in mv):
+        #     overall_dict_ori[mk].append(statistics.harmonic_mean(mv))
+        # else:
+        #     overall_dict_ori[mk].append(np.mean(mv))
+        overall_dict_ori[mk].append(np.mean(mv))
 for mk, mv in overall_dict_ori.items():
     overall_result_ori[mk] = np.mean(mv)
 print("ori", overall_result_ori)
@@ -222,10 +224,11 @@ for k, v in data_dict_beam.items():
         for mk, mv in metrics_dict.items():
             example_dict[mk].append(mv)
     for mk, mv in example_dict.items():
-        if not 0 in mv and not any(n < 0 for n in mv):
-            overall_dict_beam[mk].append(statistics.harmonic_mean(mv))
-        else:
-            overall_dict_beam[mk].append(np.mean(mv))
+        # if not 0 in mv and not any(n < 0 for n in mv):
+        #     overall_dict_beam[mk].append(statistics.harmonic_mean(mv))
+        # else:
+        #     overall_dict_beam[mk].append(np.mean(mv))
+        overall_dict_beam[mk].append(np.mean(mv))
 for mk, mv in overall_dict_beam.items():
     overall_result_beam[mk] = np.mean(mv)
 print("beam", overall_result_beam)
@@ -239,10 +242,11 @@ for k, v in data_dict_recurrent.items():
         for mk, mv in metrics_dict.items():
             example_dict[mk].append(mv)
     for mk, mv in example_dict.items():
-        if not 0 in mv and not any(n < 0 for n in mv):
-            overall_dict_recurrent[mk].append(statistics.harmonic_mean(mv))
-        else:
-            overall_dict_recurrent[mk].append(np.mean(mv))
+        # if not 0 in mv and not any(n < 0 for n in mv):
+        #     overall_dict_recurrent[mk].append(statistics.harmonic_mean(mv))
+        # else:
+        #     overall_dict_recurrent[mk].append(np.mean(mv))
+        overall_dict_recurrent[mk].append(np.mean(mv))
 for mk, mv in overall_dict_recurrent.items():
     overall_result_recurrent[mk] = np.mean(mv)
 print("recurrent", overall_result_recurrent)
@@ -256,10 +260,11 @@ for k, v in data_dict_random.items():
         for mk, mv in metrics_dict.items():
             example_dict[mk].append(mv)
     for mk, mv in example_dict.items():
-        if not 0 in mv and not any(n < 0 for n in mv):
-            overall_dict_random[mk].append(statistics.harmonic_mean(mv))
-        else:
-            overall_dict_random[mk].append(np.mean(mv))
+        # if not 0 in mv and not any(n < 0 for n in mv):
+        #     overall_dict_random[mk].append(statistics.harmonic_mean(mv))
+        # else:
+        #     overall_dict_random[mk].append(np.mean(mv))
+        overall_dict_random[mk].append(np.mean(mv))
 for mk, mv in overall_dict_random.items():
     overall_result_random[mk] = np.mean(mv)
 print("random", overall_result_random)
@@ -278,10 +283,11 @@ for k, v in data_dict_jaccard.items():
             for mk, mv in metrics_dict.items():
                 example_dict[mk].append(mv)
         for mk, mv in example_dict.items():
-            if not 0 in mv and not any(n < 0 for n in mv):
-                overall_dict_jaccard[mk].append(statistics.harmonic_mean(mv))
-            else:
-                overall_dict_jaccard[mk].append(np.mean(mv))
+            # if not 0 in mv and not any(n < 0 for n in mv):
+            #     overall_dict_jaccard[mk].append(statistics.harmonic_mean(mv))
+            # else:
+            #     overall_dict_jaccard[mk].append(np.mean(mv))
+            overall_dict_jaccard[mk].append(np.mean(mv))
 for mk, mv in overall_dict_jaccard.items():
     overall_result_jaccard[mk] = np.mean(mv)
 print("jaccard", overall_result_jaccard)
@@ -299,10 +305,11 @@ for k, v in data_dict_ori.items():
             for mk, mv in metrics_dict.items():
                 example_dict[mk].append(mv)
         for mk, mv in example_dict.items():
-            if not 0 in mv and not any(n < 0 for n in mv):
-                overall_dict_ori[mk].append(statistics.harmonic_mean(mv))
-            else:
-                overall_dict_ori[mk].append(np.mean(mv))
+            # if not 0 in mv and not any(n < 0 for n in mv):
+            #     overall_dict_ori[mk].append(statistics.harmonic_mean(mv))
+            # else:
+            #     overall_dict_ori[mk].append(np.mean(mv))
+            overall_dict_ori[mk].append(np.mean(mv))
 for mk, mv in overall_dict_ori.items():
     overall_result_ori[mk] = np.mean(mv)
 print("ori", overall_result_ori)
@@ -320,10 +327,11 @@ for k, v in data_dict_beam.items():
             for mk, mv in metrics_dict.items():
                 example_dict[mk].append(mv)
         for mk, mv in example_dict.items():
-            if not 0 in mv and not any(n < 0 for n in mv):
-                overall_dict_beam[mk].append(statistics.harmonic_mean(mv))
-            else:
-                overall_dict_beam[mk].append(np.mean(mv))
+            # if not 0 in mv and not any(n < 0 for n in mv):
+            #     overall_dict_beam[mk].append(statistics.harmonic_mean(mv))
+            # else:
+            #     overall_dict_beam[mk].append(np.mean(mv))
+            overall_dict_beam[mk].append(np.mean(mv))
 for mk, mv in overall_dict_beam.items():
     overall_result_beam[mk] = np.mean(mv)
 print("beam", overall_result_beam)
@@ -341,10 +349,11 @@ for k, v in data_dict_recurrent.items():
             for mk, mv in metrics_dict.items():
                 example_dict[mk].append(mv)
         for mk, mv in example_dict.items():
-            if not 0 in mv and not any(n < 0 for n in mv):
-                overall_dict_recurrent[mk].append(statistics.harmonic_mean(mv))
-            else:
-                overall_dict_recurrent[mk].append(np.mean(mv))
+            # if not 0 in mv and not any(n < 0 for n in mv):
+            #     overall_dict_recurrent[mk].append(statistics.harmonic_mean(mv))
+            # else:
+            #     overall_dict_recurrent[mk].append(np.mean(mv))
+            overall_dict_recurrent[mk].append(np.mean(mv))
 for mk, mv in overall_dict_recurrent.items():
     overall_result_recurrent[mk] = np.mean(mv)
 print("recurrent", overall_result_recurrent)
@@ -362,21 +371,22 @@ for k, v in data_dict_random.items():
             for mk, mv in metrics_dict.items():
                 example_dict[mk].append(mv)
         for mk, mv in example_dict.items():
-            if not 0 in mv and not any(n < 0 for n in mv):
-                overall_dict_random[mk].append(statistics.harmonic_mean(mv))
-            else:
-                overall_dict_random[mk].append(np.mean(mv))
+            # if not 0 in mv and not any(n < 0 for n in mv):
+            #     overall_dict_random[mk].append(statistics.harmonic_mean(mv))
+            # else:
+            #     overall_dict_random[mk].append(np.mean(mv))
+            overall_dict_random[mk].append(np.mean(mv))
 for mk, mv in overall_dict_random.items():
     overall_result_random[mk] = np.mean(mv)
 print("random", overall_result_random)
 
-with open('data_dict_jaccard.pickle', 'wb') as file:
-    pickle.dump(data_dict_jaccard, file)
-with open('data_dict_recurrent.pickle', 'wb') as file:
-    pickle.dump(data_dict_recurrent, file)
-with open('data_dict_beam.pickle', 'wb')as file:
-    pickle.dump(data_dict_beam, file)
-with open('data_dict_ori.pickle', 'wb')as file:
-    pickle.dump(data_dict_ori, file)
-with open('data_dict_random.pickle', 'wb')as file:
-    pickle.dump(data_dict_random, file)
+# with open('data_dict_jaccard.pickle', 'wb') as file:
+#     pickle.dump(data_dict_jaccard, file)
+# with open('data_dict_recurrent.pickle', 'wb') as file:
+#     pickle.dump(data_dict_recurrent, file)
+# with open('data_dict_beam.pickle', 'wb')as file:
+#     pickle.dump(data_dict_beam, file)
+# with open('data_dict_ori.pickle', 'wb')as file:
+#     pickle.dump(data_dict_ori, file)
+# with open('data_dict_random.pickle', 'wb')as file:
+#     pickle.dump(data_dict_random, file)
